@@ -12,6 +12,9 @@ import BusinessIcon from '@mui/icons-material/Business';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import AppsIcon from '@mui/icons-material/Apps';
 import { comparray } from './componentarray';
+import LogoutIcon from '@mui/icons-material/Logout';
+import SettingsIcon from '@mui/icons-material/Settings';
+import SettingsApplicationsSharpIcon from '@mui/icons-material/SettingsApplicationsSharp';
 export default function MainPage()
  { 
   
@@ -34,9 +37,13 @@ export default function MainPage()
     <div>
       <AppBar>
         <Toolbar style={{ justifyContent: 'flex-end',backgroundColor:"#482880" }}>
-          <Button variant="contained"  >Logout</Button>
-          <Button variant="contained" >Settings</Button>
-     
+        <IconButton color="primary" aria-label="Log out">
+                  <LogoutIcon />
+            </IconButton>
+         
+            <IconButton color="primary" aria-label="Settings">
+                  <SettingsApplicationsSharpIcon/>
+            </IconButton>
           <AppsIcon onClick={handlePopoverOpen}/>
         </Toolbar>
       </AppBar>

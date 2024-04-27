@@ -7,6 +7,12 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Layoutcomp from './components/Layoutcomp';
 import ServiceCard from './components/servicecard';
 import BasicDateCalendar from './NAttendance/Nattendance';
+import Medical from './components/medicalslip';
+import Esicslip from './components/EsiSlip';
+import ButtonEsi from './components/ButtonEsi';
+import ButtonPrint from './components/ButtonPrint';
+import Buttonres from './components/Buttonres';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
@@ -15,8 +21,12 @@ root.render(
      <Route path="/" element={<Layoutcomp/>}/>
      <Route path='/home' element={<ServiceCard/>}></Route>
      <Route path='/calendar' element ={<BasicDateCalendar/>}></Route> 
+     <Route path='/medical' element={<ButtonPrint/>}></Route>
+     <Route path='/esi' element={<ButtonEsi/>}></Route>
+     <Route path='/resignation' element={<Buttonres/>}></Route>
+
      
-     </Route>
+  </Route>
    </Routes>
     </BrowserRouter>
 );

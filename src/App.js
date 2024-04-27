@@ -16,6 +16,8 @@ function App() {
       <br/>
     <MainPage/>
    <Outlet></Outlet>
+
+   
    
     </div>
   );
